@@ -5,8 +5,14 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development do
+group :development, :test do
+   	gem 'rspec-rails', '2.13.1'
 	gem 'sqlite3'
+end
+
+group :test do
+	gem 'selenium-webdriver', '2.0.0'
+	gem 'capybara', '2.1.0'
 end
 
 gem 'json'
